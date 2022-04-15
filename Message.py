@@ -1,4 +1,3 @@
-from xmlrpc.client import Boolean
 from Encodes import Encode
 from Encodes.Reverse import Reverse
 
@@ -46,7 +45,3 @@ class Message:
 
     def __repr__(self):
         return f"Message(text={self._message}, encode={self._objectEncode.__class__.__name__}, encrypted={self._encrypted})"
-
-
-from Encodes import *
-m = Message("Hola Mundo", Rot13())
